@@ -1,0 +1,21 @@
+$width: 778px;
+
+// $blue:#003580;
+// $yellow:#febb02;
+// $white:#ffff;
+// $gray:#555;
+// $pureBlue:#00224f;
+
+
+$width: 778px;
+$blue: #003580;
+$yellow: #febb02;
+$white: #ffff;
+$gray: #555;
+$pureBlue: #00224f;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content
+  }
+}

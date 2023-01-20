@@ -1,0 +1,200 @@
+@import "../../global.scss";
+
+
+.header{
+    background-color: $blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+   
+    .header_container{
+        width: 100%;
+        max-width: 1024px;
+        padding: 30px 0px;
+        margin: 20px 0px 100px 0px;
+        position: relative;
+
+        .headerList {
+           
+                ul {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    gap: 20px;
+                    @include mobile{
+                        gap: 0px;
+                        display: none;
+                    }
+
+                            
+        
+                    li {
+                        a {
+                            display: flex;
+                            gap: 5px;
+                            color: $white;
+                            padding: 10px;
+                          
+                            border-radius: 20px;
+                            transition: all 1s ease;
+                            &:hover{
+                                background-color: rgba(255,255,255, 0.4);
+                            }
+                        }
+                    }
+                }
+            }
+            .headerTitle{
+                margin: 20px 0px;
+                color: $white;
+                font-size: 40px;
+            }
+            .headerDesc{
+                margin: 20px 0px ;
+                color: $white;
+            }
+            button{
+                padding: 10px 20px;
+                background-color: $white;
+                border-radius: 20px ;
+                cursor: pointer;
+                color: $blue;
+                transition: all 1s ease;
+                &:hover{
+                    background-color: rgba(255,255,255, 0.4);
+                    color: white;
+                }
+            }
+
+            // headerSearch section
+
+            .headerSearch{
+                height: 40px;
+                background-color: white;
+                border: 3px solid $yellow;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: absolute;
+                bottom: -44%;
+                width:100%;
+                max-width: 1024px;
+                z-index: 2;
+                @include mobile{
+                    flex-direction: column;
+                    gap: 30px;
+                    height: max-content;
+                    bottom:-150px;
+                    // border: none;
+                    width: 400px;
+                    left: -70px;
+                }
+                .headerSearchItem{
+                    display: flex;
+                    cursor: pointer;
+                    flex: 1;
+                    position: relative;
+                    border-bottom: 1px solid $yellow;
+                    padding: 10px ;
+                    @include mobile{
+                        width: 100%;
+                    }
+                    .calender{
+                        position: absolute;
+                        top: 25px;
+                        border: 1px solid $yellow;
+                        left: -50px;
+                        @include mobile{
+                            top: 160px;
+                        }
+                    }
+                    .options{
+                        width: 300px;
+                        height: 300px;
+                        position: absolute;
+                        top: 27px;
+                        border: 1px solid $yellow;
+                        padding: 20px;
+                        border-radius: 10px;
+                        border-top: none;
+                        background-color: white;
+                        @include mobile {
+                                top: 70px;
+                                right: -27px;
+                                padding: 0px;
+                                width: 170px;
+                                height: 180px;
+
+                            }
+                        .optionItem{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                            padding: 20px ;
+                            gap: 10px;
+                            span{
+                                @include mobile{
+                                    font-size: 13px;
+                                }
+                            }
+                            button{
+                                border-radius: 3px;
+                                padding: 5px;
+                                background-color: transparent;
+                                border: 1px solid $blue;
+                                @include mobile{
+                                    padding: 2px;
+                                    border: none;
+                                }
+
+                                &:hover{
+                                    color:$blue;
+                                }
+                            }
+                            .counterDiv{
+                                display: flex;
+                                align-items: center;
+                                gap: 7px;
+                            }
+                        }
+                    }
+                    input{
+                        border: none;
+                        width: 90%;
+                        height: 100%;
+                        margin-left: 10px;
+                    }
+                    i{
+                        color: $blue;
+                        margin-left: 10px;
+                    }
+                    .headerSearchText{
+                        margin-left: 5px;
+                        font-size: 14px;
+                        font-weight: 700;
+                        color: $gray;
+                    }
+                }
+                .searchBtn{
+                    border-radius: 0;
+                    background-color: $blue;
+                    color: $white;
+                    padding: 0;
+                    width: 50px;
+                    height: 100%;
+                    padding: 0px 10px;
+                }
+            }
+    }
+
+  
+}
+
+//  .header_container.headerType {
+//      width: 100%;
+//      max-width: 1024px;
+//      padding: 30px 0px;
+//      margin: 20px 0px 10px 0px;
+//      position: relative;
+//  }

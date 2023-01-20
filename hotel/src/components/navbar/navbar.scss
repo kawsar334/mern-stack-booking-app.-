@@ -1,0 +1,51 @@
+
+@import "../../global.scss";
+
+.navbar{
+    background-color: $blue;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    @include mobile{
+        padding-top: 30px;
+    }
+    .navContainer{
+        width: 100%;
+        max-width: 1024px;
+        background-color: $blue;
+        color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mobile{
+            justify-content: center;
+            gap: 10px;
+           
+        }
+        .logo{
+            font-weight: 700;
+            font-size: 25px;
+            cursor: pointer;
+            color: $white;
+        }
+        .navItems{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+          
+            button{
+                background-color: $white;
+                color: $blue;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: 300;
+                @include mobile {
+                        padding: 5px 10px;
+                    }
+            }
+        }
+    }
+}

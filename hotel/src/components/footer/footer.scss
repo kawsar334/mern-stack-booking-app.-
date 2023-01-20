@@ -1,0 +1,42 @@
+@import "../../global.scss";
+.footer{
+    padding: 10px 100px;
+    background-color: $white;
+    width: 100%;
+    @include mobile {
+            padding: 0;
+        }
+    .footerWrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 30px;
+        width: 100%;
+        flex-wrap: wrap;
+        // background-color: red;
+        @include mobile{
+            padding: 0;
+            justify-content: flex-start;
+        }
+        .footerItem{
+            width: 20%;
+            @include mobile{
+                width: 40%;
+                margin-right: 10px;
+                // border-bottom: 1px solid $blue;
+                margin-top: 20px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 10px;
+                    font-size: 14px;
+                    a{
+                        color: teal;
+                    }
+                }
+            }
+        }
+        
+    }
+}

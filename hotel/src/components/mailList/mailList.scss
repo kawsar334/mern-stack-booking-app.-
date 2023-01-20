@@ -1,0 +1,58 @@
+
+@import "../../global.scss";
+
+.mailList{
+    width: 100%;
+    background-color: $pureBlue;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px ;
+    .mailWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h1{
+                font-size: 40px;
+                font-weight: 700;
+                margin: 10px;
+
+            }
+            p{
+                font-weight: 300;
+                text-transform: capitalize;
+                font-size: 13px;
+            }
+
+        .inputContainer{
+            display: flex;
+            align-items: center;
+            width: 400px;
+            justify-content: space-between;
+            background-color: $white;
+            margin: 20px;
+            height: 40px;
+            overflow: hidden;
+            
+            
+            
+            input{
+                border: none;
+                height: 100%;
+                padding-left: 10px;
+                width: 310px;
+                color: $blue;
+                
+            }
+            button{
+                background-color: $blue;
+                height: 100%;
+                padding: 0px 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

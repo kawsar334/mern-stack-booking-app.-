@@ -1,0 +1,86 @@
+@import "../../global.scss";
+
+.list{
+    .listContainer {
+        width: 100%;
+        max-width: 1024px;
+        margin:0 auto;
+        margin-top: 20px;
+        .listWrapper{
+            width: 100%;
+            max-width: 1024px;
+            display: flex;
+            gap:5px;
+            flex-wrap: wrap;
+            @include mobile{
+                flex-direction: column;
+
+            }
+            .listSearch{
+                flex: 0.7;
+                background-color: $yellow;
+                margin-top: 20px;
+                height: max-content;
+                padding: 20px 10px ;
+                border-radius: 10px;
+                position: sticky;
+                top:10px;
+                @include mobile {
+                    position: relative;
+                    width: 70%;
+                    margin: 0 auto;
+
+                    }
+                .searchTitle{
+                    color:$gray;
+                    margin: 0 auto;
+                }
+                .ls_item{
+                    margin-top: 20px;
+                
+                    position: relative;
+                    cursor: pointer;
+
+                    label{
+                        // background-color: $white;
+                        border-radius: 5px;
+                        padding: 0px 10px;
+                        
+                    }
+                    .listCalender{
+                        position: absolute;
+                        top: 10px;
+                        z-index: 2;
+
+                    }
+                    .listSearchOptionItem{
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 10px 5px ;
+                        input{
+                            width: 50px;
+                        }
+                    }
+                }
+                .list_btn{
+                    display: block;
+                    margin: 10px auto;
+                    padding: 5px 10px;
+                    background-color:$white;
+                    color: $blue;
+                    cursor: pointer;
+                    border-radius: 3px;
+                }
+                
+            }
+
+            // result section
+            .letResult{
+                flex:2;
+                padding: 10px ;
+               
+                
+            }
+        }
+    }
+}
