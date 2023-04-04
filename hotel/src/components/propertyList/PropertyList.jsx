@@ -3,6 +3,8 @@ import "./propertylist.scss"
 
 const PropertyList = () => {
   const { data, error, loading } = UseFetch("/hotel/countbytype");
+  console.log(error)
+  console.log(data)
   const images = [
     "https://images.pexels.com/photos/14281756/pexels-photo-14281756.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" ,
     "https://images.pexels.com/photos/14281756/pexels-photo-14281756.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load" ,
